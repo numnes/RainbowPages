@@ -2,16 +2,16 @@
 server/node_modules
 
 # MOBILE
-mobile/RainbowPages/node_modules
-mobile/RainbowPages/.expo/*
-mobile/RainbowPages/npm-debug.*
-mobile/RainbowPages/*.jks
-mobile/RainbowPages/*.p8
-mobile/RainbowPages/*.p12
-mobile/RainbowPages/*.key
-mobile/RainbowPages/*.mobileprovision
-mobile/RainbowPages/*.orig.*
-mobile/RainbowPages/web-build/
+mobile/node_modules/**/*
+mobile/.expo/*
+mobile/npm-debug.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.orig.*
+mobile/web-build/
 
 # WEB
 web/node_modules
