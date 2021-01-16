@@ -1,0 +1,124 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+#home-page{
+    width:100vw;
+    height:100vh;
+    
+    display:flex;
+    justify-content:center;
+    
+}
+
+/* itens principais */
+.home-banner{
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+}
+.home-pannel{
+    background: var(--color-theme);
+}
+
+/* sub itens */
+.banner-image{
+    width: 100%;
+    height: 100%;
+}
+.pannel-search-bar{
+    width: 30rem;
+    height: 2rem;
+    background: #F2F1F9;
+    border: none;
+    padding:0.5rem;
+    border-radius: 12px;
+    outline: none;
+}
+.name-company{
+    font-size: 1.2rem;
+}
+.rating-box{
+    margin-top: 15px;
+}
+.comment-images-box{
+    width: 350px;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+.comment-images{
+    border-radius: 50%;
+}
+
+/* ajuste espacial dos itens */
+@media (min-width: 1100px){
+    /* Itens principais */
+    #home-page-content{
+        max-width: 100%;
+      
+        display: grid;
+        grid-template-rows: 300px 600px 150px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "banner"
+            "pannel"
+            "footer"
+        ;
+    }
+    .home-banner{
+        margin: 0;
+        grid-area: banner;
+    }
+    .home-pannel{
+        grid-area: pannel;
+    }
+    .home-footer{
+        grid-area: footer;
+    }
+
+    /* Sub itens */
+    #home-pannel{
+        display: grid;
+        grid-template-rows: 50px 300px 300fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "search search"
+            "cards cards"
+            "about comments"
+        ;
+    }
+    .home-pannel-search{
+        display:flex;
+        justify-content:center;
+        margin-top: 10px;
+        align-items: center;
+        grid-area: search;
+    }
+    .home-pannel-cards{
+        padding-left: 60px;
+        margin-top: 15px;
+        padding-right: 60px;
+        grid-area: cards;
+    }
+    .home-pannel-about{
+        grid-area: about;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .home-pannel-comments{
+        display:flex;
+        justify-content:center;
+        
+        grid-area: comments;
+    }
+    .image-logo{
+        border-radius: 50%;
+        width: 150px;
+    }
+    .texto-logo{
+        display:flex;
+        text-align: justify;
+        max-width: 300px;
+        margin-left: 40px;
+    }
+    
+}

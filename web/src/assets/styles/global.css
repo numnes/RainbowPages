@@ -1,0 +1,20 @@
+:root {
+    --color-background : #e1e1e1;
+    --color-theme : #E856A4;
+}
+
+body {
+    background: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
