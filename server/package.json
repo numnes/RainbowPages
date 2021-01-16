@@ -1,0 +1,14 @@
+{
+  "name": "rainbowpages",
+  "version": "1.0.0",
+  "description": "Project developed by the second edition of Hackathon CCR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "",
+  "license": "ISC"
+}
