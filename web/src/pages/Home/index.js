@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React , { useState } from 'react';
 import Banner from '../../assets/images/RainbowPlaceholder.svg';
 import Logo from '../../assets/images/logoPlaceHolder.jpg';
