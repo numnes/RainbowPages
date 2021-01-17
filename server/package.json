@@ -4,7 +4,8 @@
   "description": "Project developed by the second edition of Hackathon CCR",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "knex"
   },
   "keywords": [
     "server"
@@ -14,6 +15,8 @@
   "dependencies": {
     "@google-cloud/firestore": "^4.8.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.15",
+    "sqlite3": "^5.0.1"
   }
 }

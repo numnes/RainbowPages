@@ -1,14 +1,26 @@
 // eslint-disable-next-line no-unused-vars
-import React , { useState } from 'react';
-import Banner from '../../assets/images/RainbowPlaceholder.svg';
-import Logo from '../../assets/images/logoPlaceHolder.jpg';
+import React , { useState, useEffect } from 'react';
+import Banner from '../../assets/images/BANNER.png';
+import Logo from '../../assets/images/LOGO.ALPHA.final.png';
 import ImageGallery from 'react-image-gallery';
+import api from '../../services/api';
+import Footer from '../../components/Footer';
 
 import './styles.css';
 
 import Carrousel from  './Carrousel'
 
 export default function Home(){
+
+    const[ vips, setVips ] = useState([]);
+
+    useEffect(()=>{
+        api.get('companylistVip').then(response => {
+            setVips(response.data);
+            console.log(vips);
+        });
+    });
+    
     const images = [
         {
           original: 'https://picsum.photos/id/1018/1000/600/',
@@ -23,11 +35,17 @@ export default function Home(){
           thumbnail: 'https://picsum.photos/id/1019/250/150/',
         },
       ];
+    var sectionStyle = {
+        backgroundImage: `url(${Banner})`,
+        backgroundSize: 'cover',
+    };
     return (
         <div id='home-page'>
             <div id="home-page-content">
-                <div className="home-banner item">
-                    <img src={Banner} alt="banner RainbowPages" className="banner-image"/>
+                <div className="home-banner item" style = {sectionStyle}>
+                    <div className="logo-banner-box">
+                        <img src={Logo} alt=""/>
+                    </div>
                 </div>
                 <div id="home-pannel" className="home-pannel">
                     <div className="home-pannel-search ">
@@ -39,10 +57,12 @@ export default function Home(){
                         />
                     </div>
                     <div className="home-pannel-cards">
-                        <Carrousel/>
+                        <Carrousel vips={vips}/>
                     </div>
                     <div className="home-pannel-about">
-                        <img src={Logo} alt="RainbowPages" className="image-logo"/>
+                        <div className="logo-box">
+                            <img src={Logo} alt="RainbowPages" className="image-logo"/>
+                        </div>
                         <div className="texto-logo">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </div>
@@ -53,7 +73,9 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-                <div className="home-footer ">FOOTER</div>
+                <div className="home-footer ">
+                    <Footer/>
+                </div>
             </div>
         </div>
     );

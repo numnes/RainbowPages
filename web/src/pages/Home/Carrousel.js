@@ -4,6 +4,7 @@ import CardImage from './Card';
 
 export default class Carrousel extends Component {
   render() {
+    const {vips} = this.props;
     const settings = {
       dots: false,
       infinite: true,
@@ -14,30 +15,14 @@ export default class Carrousel extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
-          <div>
-            <CardImage/>
-          </div>
+        {console.log(vips)}
+          {vips.map(vip => (
+                <div>
+                  
+                  <CardImage data={vip}/>
+                </div>
+              )
+          )}
         </Slider>
       </div>
     );

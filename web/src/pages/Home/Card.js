@@ -17,8 +17,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CardImage() {
+export default function CardImage(props) {
   const classes = useStyles();
+  const {data} = props;
 
   return (
     <Card className={classes.root}>
@@ -27,15 +28,15 @@ export default function CardImage() {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="https://uploads.metropoles.com/wp-content/uploads/2020/06/12164958/O-p%C3%A3o-que-o-Viado-Amassou.jpg"
+          image = {process.env.PUBLIC_URL + "iconesEmpresas/"+data.id + ".png"}
           title="Contemplative Reptile"
         />
         <CardContent>
             <span className='name-company'>
-                Pão Que o Viado Amassou
+              {data.nome}
             </span>
             <div className="rating-box">
-                <Rating name="read-only" value={3} readOnly />
+                <Rating name="read-only" value={data.nota} readOnly />
             </div>
         </CardContent>
       </CardActionArea>

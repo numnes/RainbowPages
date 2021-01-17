@@ -4,6 +4,7 @@ import Star from '../../assets/images/estrelas.png';
 import Foto from '../../assets/images/O-pão-que-o-Viado-Amassou.jpg';
 import Logo from '../../assets/images/LOGO.ALPHA.final.png';
 import './styles.css';
+import Footer from '../../components/Footer';
 
 export default function Search(){
     return(
@@ -98,7 +99,7 @@ export default function Search(){
                         </div>
                     </div>
                 </div>
-                <div className="footer ">FOOTER</div>
+                <div className="footer "><Footer/></div>
             </div>
         </div>
     )

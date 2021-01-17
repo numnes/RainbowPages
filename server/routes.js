@@ -1,13 +1,11 @@
 const express = require('express');
 const companyController = require('./controllers/companyController');
+constfeedbackController = require('./controllers/feedbackController');
 const routes = express.Router();
 
-
-
-
-routes.post('/companycad', companyController.save);
-routes.get('/companylist', companyController.list);
-
-
+routes.post('/companycad', companyController.create);
+routes.post('/companycadMultiple', companyController.createMultiple);
+routes.get('/companylist', companyController.index);
+routes.get('/companylistVip', companyController.indexVips);
 
 module.exports = routes;

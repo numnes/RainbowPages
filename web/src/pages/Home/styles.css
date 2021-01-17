@@ -12,6 +12,7 @@
 .home-banner{
     width: 100vw;
     display:flex;
+    overflow: hidden;
     justify-content:center;
 }
 .home-pannel{
@@ -19,9 +20,13 @@
 }
 
 /* sub itens */
-.banner-image{
-    width: 100%;
-    height: 100%;
+.logo-banner-box{
+    background: rgba(255, 255, 255, 0.6);
+    
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+
 }
 .pannel-search-bar{
     width: 30rem;
@@ -55,7 +60,7 @@
         max-width: 100%;
       
         display: grid;
-        grid-template-rows: 300px 600px 150px;
+        grid-template-rows: 500px 600px 150px;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "banner"
@@ -72,6 +77,9 @@
     }
     .home-footer{
         grid-area: footer;
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
     }
 
     /* Sub itens */
@@ -111,8 +119,17 @@
         grid-area: comments;
     }
     .image-logo{
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .logo-box{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background: #f5cbee;
         border-radius: 50%;
-        width: 150px;
+        width: 200px;
+        height: 200px;
     }
     .texto-logo{
         display:flex;

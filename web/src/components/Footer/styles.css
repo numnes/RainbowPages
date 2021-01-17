@@ -1,0 +1,17 @@
+#footer-box{
+    
+    display:flex;
+    justify-content:center;
+    align-items:  center;
+    
+    
+}
+.icon-social-media{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.social-icons-box{
+    display:flex;
+    margin-top: 20px;
+}
