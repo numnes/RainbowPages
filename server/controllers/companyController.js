@@ -6,6 +6,17 @@ module.exports = {
         const companies = await connection('companies').select('*');
         return response.json(companies);
     },
+    async indexFiltered(request, response) {
+        const {filtro} = request.body;
+        let responses = [];
+        const companiesName = await connection('companies').select('*').where({"nome" : filtro}, true).orderBy('vip', 'desc').orderBy('nota','desc');
+        const companiesCity = await connection('companies').select('*').where({"endereco" : filtro}, true).orderBy('vip', 'desc').orderBy('nota','desc');
+
+        responses = companiesName
+        responses.push(companiesCity)
+
+        return response.json(responses);
+    },
     async indexVips(request, response) {
         const companies = await connection('companies').select('*').where('vip', true);
         return response.json(companies);

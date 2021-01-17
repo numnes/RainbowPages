@@ -1,26 +1,31 @@
 
 #search{
     width:100%;
-    height:100vh;
+    
     display:flex;
-    justify-content:center;
+    
 }
 .search-content{
     background: var(--color-theme);
-    height: 110%;
+    min-height: 110%;
+    height: auto;
     width:100%;
+    display: flex;
+    
+    justify-content: center;
     padding: 2rem; 
 }
 .search-results{
     background: #FCFBFB;
     border: 1px solid #adadad;
     width: 70rem;
-    height: 582px;
+    height: auto;
     justify-content: center;
-    margin-left:105px;
+   
     padding-top: 5rem;
     padding: 1.5rem;
     border-radius: 20px;
+   
 }
 .search-card-result{
     background: #FCFBFB;
@@ -28,6 +33,7 @@
     height: 180px;
     margin-bottom:8px;
     align-items: center;
+    display: flex;
     border-bottom: 1px solid #adadad;
 }
 .photo{
@@ -42,41 +48,44 @@
 }
 .texto-NomeEmpresa{
     display:flex;
-    text-align: justify;
     color: #85868a;
-    max-width: 200px;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Bold;
-    margin-left: 158px;
-    margin-top: -126px;
+    margin-left: 50px;
 }
 .texto{
         display:flex;
         text-align: justify;
         color: #97989b;
-        max-width: 370px;
-        margin-left: 390px;
-        margin-top: -60px;
+        width: 450px;
+        margin-left: 20px;
     }
+.avaliacao-box{
+    float:inline-end;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+   
+}
 .texto-Avaliacao{
-        display:flex;
-        text-align: justify;
-        max-width: 370px;
-        margin-left: 850px;
-        margin-top: -144px;
+        text-align: center;
+        width: 100%;
+        height: 40px;
         font-size: 60px;
 }
 .Estrelas-Avaliacao{
-        display:flex;
-        text-align: justify;
         max-width: 370px;
-        margin-left: 830px;
-        margin-top: -5px;
+        height: 60px;
+        margin-bottom: 10px;
         font-size: 60px;
 }
 .Button-VerMais{
     text-align: center;
-    margin-left: 721px;
     margin-top: 3px;
     width: 90px;
     height: 28px;
@@ -87,8 +96,6 @@
 }
 .Button-VerMais:hover{
     text-align: center;
-    margin-left: 721px;
-    margin-top: 3px;
     width: 90px;
     height: 28px;
     border-radius: 17px;
@@ -99,7 +106,7 @@
 .serch-bar{
     background: #FCFBFB;
     width:100vw;
-    height: 85px;
+    height: 120px;
     display:flex;
     align-items: center;
 }
@@ -136,10 +143,11 @@
 }
 .image-logo{
     border-radius: 50%;
-    height: 110px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 .box-image-logo{
+    display: flex;
     margin-left:15px;
     margin-right: 10px;
 }
@@ -148,13 +156,52 @@
 }
 .footer{
     width: 100%;
-    height: 150px;
+    height: 100px;
     padding-top: 50px;
     display: flex;
     justify-content: center;
     background: #F2F1F9;
 }
+.button-search{
+    width: 3rem;
+    height: 2.1rem;
+    color: #ffffff;
+    background-color: #f09ac8;
+    border: 0.9px solid #e27cb2;
+    padding:0.5rem;
+    margin-left:10px;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    outline: none;
+}
+.button-search:hover{
+    color: #ffffff;
+    background-color: #dd4c9a;
+    border: 1.9px solid #af2e73;
+    margin-left:10px;
+    border-radius: 17px;
+    outline: none;
+}
+
+/* Borda arco-iris */
 
 
-/* Disposição dos itens */
+.top-round-Rainbow {
+
+    border-radius: 4px;
+    
+    background-image: repeating-linear-gradient(to right,
+    #c4e17f 0px, #c4e17f 50px,
+    #f7fdca 50px, #f7fdca 100px,
+    #fad071 100px, #fad071 150px,
+    #f0766b 150px, #f0766b 200px,
+    #db9dbe 200px, #db9dbe 250px,
+    #c49cdf 250px, #c49cdf 300px,
+    #6599e2 300px, #6599e2 350px,
+    #61c2e4 350px, #61c2e4 400px);
+    background-size: 100% 10px;
+    background-repeat:no-repeat;
+  }
 

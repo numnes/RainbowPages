@@ -5,19 +5,27 @@ import Logo from '../../assets/images/LOGO.ALPHA.final.png';
 import ImageGallery from 'react-image-gallery';
 import api from '../../services/api';
 import Footer from '../../components/Footer';
+import SearchIcon from '@material-ui/icons/Search';
+import { Link , useHistory } from 'react-router-dom';
 
 import './styles.css';
 
 import Carrousel from  './Carrousel'
 
 export default function Home(){
+    const history = useHistory();
 
     const[ vips, setVips ] = useState([]);
+    const[ search, setSearch] = useState([]);
+
+    function clickSearch(){
+        localStorage.setItem('homeSearch', search);
+        history.push('/search');
+    }
 
     useEffect(()=>{
         api.get('companylistVip').then(response => {
             setVips(response.data);
-            console.log(vips);
         });
     });
     
@@ -55,7 +63,10 @@ export default function Home(){
                             key="random1"
                             value={""}
                             placeholder={"Procurar uma empresa"}
+                            value = {search}
+                            onChange={e => setSearch(e.target.value)}
                         />
+                        <button className="button-search" alt="Buacar" onClick={clickSearch}><SearchIcon/></button>
                     </div>
                     <div className="home-pannel-cards">
                         <Carrousel vips={vips}/>
