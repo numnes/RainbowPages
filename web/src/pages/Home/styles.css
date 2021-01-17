@@ -34,8 +34,8 @@
     border-top-right-radius: 50%;
 }
 .background-banner{
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
     height: 110%;
     width: 100%;
     z-index: 0;

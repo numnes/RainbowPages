@@ -1,0 +1,167 @@
+.coment-content{
+    background: var(--color-theme);
+    height: 80%;
+    width:100%;
+    padding: 2rem; 
+}
+.coment-results01{
+    background: #ffffff;
+    border: 1px solid #adadad;
+    width: 45rem;
+    height: 392px;
+    justify-content: center;
+    padding-left: 3.3rem;
+    padding-top: 0.5rem;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 320px;
+}
+.coment-card{
+    background: #fffdfd;
+    width:38rem;
+    height: 300px;
+    margin-top: 20px;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    font-size: 20spx;
+    margin-top: 20px;
+    padding-left: 58px;
+}
+textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing:content-box;
+    border-radius: 0.5em;
+    margin-left: -20px;
+    margin-top: -20px;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+.cargo{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    height: 30px;
+    -moz-box-sizing: border-box;
+    box-sizing:content-box;
+    border-radius: 0.5em;
+    margin-left: -20px;
+    margin-top: -20px;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+.pros{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 150px;
+    height: 30px;
+    border-radius: 0.5em;
+    margin-left: -20px;
+    margin-top: -20px;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+.contra{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    height: 30px;
+    border-radius: 0.5em;
+    margin-left: -20px;
+    margin-top: -20px;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #dd4c9a;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+    resize:none;
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 4em;
+}
+.coment-texto-Nome{
+    display:flex;
+    text-align: justify;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Bold;
+    color: #767779;
+    max-width: 370px;
+    margin-left: 120px;
+    margin-top: -20px;
+}
+.text-nota01{
+    width: 50px;
+    text-align: left;
+    font-size: 15px;
+    color:  #767779;
+    max-width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.check-radio{
+    width: 500px;
+    text-align: left;
+    font-size: 15px;
+    color:  #767779;
+    max-width: 300px;
+    margin-left: 200px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.check-radio01{
+    width: 500px;
+    text-align: left;
+    font-size: 15px;
+    color:  #767779;
+    max-width: 300px;
+    margin-left: 280px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.text-nota{
+    width: 50px;
+    text-align: left;
+    font-size: 15px;
+    color:  #767779;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.star{
+    width: 500px;
+    margin-left: 5px;
+    margin-top: -20px;  
+}
+.button input[type=submit]{
+    text-align: center;
+    margin-left: -11px;
+    margin-top: 3px;
+    width: 90px;
+    height: 28px;
+    border-radius: 17px;
+    color: #ffffff;
+    background-color: #f09ac8;
+    border: 0.9px solid #e27cb2;
+}
+.button input[type=submit]:hover{
+    text-align: center;
+    margin-left: -11px;
+    margin-top: 3px;
+    width: 90px;
+    height: 28px;
+    border-radius: 17px;
+    color: #ffffff;
+    background-color: #dd4c9a;
+    border: 1.9px solid #af2e73;
+}

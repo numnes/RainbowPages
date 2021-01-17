@@ -34,8 +34,8 @@ export default function Enterprise(){
                 </div>
 
                 <div className="enterprise-buttons">
-                    <button className="enterprise-filterhover"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
-                    <button className="enterprise-filter"><a href='http://localhost:3000/pros'>Prós</a></button>
+                    <button className="enterprise-filter"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
+                    <button className="enterprise-filterhover"><a href='http://localhost:3000/pros'>Prós</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/contras'>Contras</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/fotos'>Fotos</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/comentar'>Avaliar Empresa</a></button>

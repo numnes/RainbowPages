@@ -3,10 +3,10 @@ import React , { useState } from 'react';
 import Star from '../../assets/images/estrelas.png';
 import Foto from '../../assets/images/O-pão-que-o-Viado-Amassou.jpg';
 import Footer from '../../components/Footer';
-import EnterpriseContent from '../../components/Enterprise-content';
+import EnterpriseComent from '../../components/Enterprise-coment';
 import './styles.css';
 
-export default function Enterprise(){
+export default function Contras(){
     return(
         <div id="enterprise" className="enterprise">
             <div id="enterprise-box">
@@ -34,13 +34,13 @@ export default function Enterprise(){
                 </div>
 
                 <div className="enterprise-buttons">
-                    <button className="enterprise-filterhover"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
+                    <button className="enterprise-filter"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/pros'>Prós</a></button>
-                    <button className="enterprise-filter"><a href='http://localhost:3000/contras'>Contras</a></button>
+                    <button className="enterprise-filterhover"><a href='http://localhost:3000/contras'>Contras</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/fotos'>Fotos</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/comentar'>Avaliar Empresa</a></button>
                 </div>
-                <EnterpriseContent/>
+                <EnterpriseComent/>
                 <div className="footer "><Footer/></div>
             </div>
         </div>

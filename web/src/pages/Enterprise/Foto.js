@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import EnterpriseContent from '../../components/Enterprise-content';
 import './styles.css';
 
-export default function Enterprise(){
+export default function Fotos(){
     return(
         <div id="enterprise" className="enterprise">
             <div id="enterprise-box">
@@ -34,10 +34,10 @@ export default function Enterprise(){
                 </div>
 
                 <div className="enterprise-buttons">
-                    <button className="enterprise-filterhover"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
+                    <button className="enterprise-filter"><a href='http://localhost:3000/enterprise'>Comentários</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/pros'>Prós</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/contras'>Contras</a></button>
-                    <button className="enterprise-filter"><a href='http://localhost:3000/fotos'>Fotos</a></button>
+                    <button className="enterprise-filterhover"><a href='http://localhost:3000/fotos'>Fotos</a></button>
                     <button className="enterprise-filter"><a href='http://localhost:3000/comentar'>Avaliar Empresa</a></button>
                 </div>
                 <EnterpriseContent/>
