@@ -16,17 +16,32 @@
     justify-content:center;
 }
 .home-pannel{
+    z-index: 2;
     background: var(--color-theme);
 }
 
 /* sub itens */
 .logo-banner-box{
     background: rgba(255, 255, 255, 0.6);
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-
-
+}
+.background-banner{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 110%;
+    width: 100%;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .pannel-search-bar{
     width: 30rem;

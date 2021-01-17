@@ -42,7 +42,8 @@ export default function Home(){
     return (
         <div id='home-page'>
             <div id="home-page-content">
-                <div className="home-banner item" style = {sectionStyle}>
+                <div className="home-banner item" >
+                    <div className="background-banner" style = {sectionStyle}></div>
                     <div className="logo-banner-box">
                         <img src={Logo} alt=""/>
                     </div>
