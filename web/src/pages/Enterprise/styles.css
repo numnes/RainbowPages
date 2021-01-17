@@ -1,0 +1,167 @@
+
+#enterprise{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+}
+.enterprise-bar{
+    background: #ffffff;
+    width:100vw;
+    height: 159px;
+    display:flex;
+    align-items: center;
+}
+.box-image-enterprise{
+    margin-left:15px;
+    margin-right: 10px;
+}
+.enterprise-box{
+    display:flex;
+}
+.image-enterprise{
+    border-radius: 50%;
+    border: 0.9px solid #bebbbb;
+    margin-left:30px;
+    height: 130px;
+    width: 130px;
+}
+.Enterprise-texto-NomeBar{
+    display:flex;
+    text-align: justify;
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Bold;
+    color: #353636;
+    max-width: 270px;
+    margin-left:40px;
+    margin-top: -50px;
+}
+.Enterprise-textoBar{
+        display:flex;
+        text-align: justify;
+        color: #97989b;
+        max-width: 570px;
+        margin-left: 200px;
+        margin-top: -50px;
+        padding-top: 2.5rem;
+        font-size: 17px;
+    }
+.Enterprise-texto-AvaliacaoBar{
+        display:flex;
+        text-align: justify;
+        color: #767779;
+        max-width: 370px;
+        margin-left: -265px;
+        margin-top: 64px;
+        font-size: 35px;
+}
+.Enterprise-Estrelas-AvaliacaoBar{
+        display:flex;
+        text-align: justify;
+        max-width: 370px;
+        margin-left: 15px;
+        margin-top: 80px;
+}
+
+.enterprise-buttons{
+    background: #ffffff;
+    border: 0.9px solid #bebbbb;
+    width:100vw;
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+.enterprise-filter{
+    width: 25%;
+    height: 50px;
+    color:  #e856a4;
+    background-color: #ffffff;
+    border: 0.0px solid #ffffff;
+}
+.enterprise-filter:hover{
+    width: 25%;
+    height: 50px;
+    color: #ffffff;
+    background-color:  #e856a4;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.enterprise-content{
+    background: var(--color-theme);
+    height: 90%;
+    width:100%;
+    padding: 2rem; 
+}
+.enterprise-results01{
+    background: #F2F1F9;
+    border: 1px solid #adadad;
+    width: 40rem;
+    height: 142px;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.enterprise-results{
+    background: #F2F1F9;
+    border: 1px solid #adadad;
+    width: 40rem;
+    height: 142px;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.enterprise-card-result{
+    background: #F2F1F9;
+    width:38rem;
+    height: 100px;
+    align-items: center;
+    margin-top: 20px;
+}
+.Enterprise-texto-Nome{
+    display:flex;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Bold;
+    color: #767779;
+    max-width: 370px;
+    margin-left: 190px;
+    margin-top: -20px;
+}
+.Enterprise-texto{
+        display:flex;
+        text-align: justify;
+        color: #97989b;
+        max-width: 370px;
+        margin-left: 190px;
+        margin-top: -35px;
+        padding-top: 2.5rem;
+        font-size: 13px;
+    }
+.Enterprise-texto-Avaliacao{
+        display:flex;
+        text-align: justify;
+        max-width: 370px;
+        margin-left: 70px;
+        margin-top: -94px;
+        font-size: 40px;
+}
+.Enterprise-Estrelas-Avaliacao{
+        display:flex;
+        text-align: justify;
+        max-width: 370px;
+        margin-left: 30px;
+        margin-top: -5px;
+}
+.footer{
+    width: 100%;
+    height: 15%;
+    background: #F2F1F9;
+}
+
+
+/* Disposição dos itens */
+
