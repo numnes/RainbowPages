@@ -15,7 +15,6 @@ export default class Carrousel extends Component {
     return (
       <div>
         <Slider {...settings}>
-        {console.log(vips)}
           {vips.map(vip => (
                 <div>
                   

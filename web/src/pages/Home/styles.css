@@ -17,6 +17,7 @@
 }
 .home-pannel{
     z-index: 2;
+    overflow: hidden;
     background: var(--color-theme);
 }
 
@@ -66,6 +67,28 @@
 }
 .comment-images{
     border-radius: 50%;
+}
+.button-search{
+    width: 3rem;
+    height: 2.1rem;
+    color: #ffffff;
+    background-color: #f09ac8;
+    border: 0.9px solid #e27cb2;
+    padding:0.5rem;
+    margin-left:10px;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    outline: none;
+}
+.button-search:hover{
+    color: #ffffff;
+    background-color: #dd4c9a;
+    border: 1.9px solid #af2e73;
+    margin-left:10px;
+    border-radius: 17px;
+    outline: none;
 }
 
 /* ajuste espacial dos itens */
