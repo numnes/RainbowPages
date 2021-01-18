@@ -1,6 +1,6 @@
 import React from 'react';
 import Star from '../../assets/images/estrelas.png';
-import './styles.css';
+import './style.css';
 
 export default function EnterpriseContent(){
 
@@ -12,16 +12,12 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        Muito bom
                         </div>
                         <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
+                            Equipe acolhedora e dedicada, dá para notar que se importam em mostrar o valor das pessoas, tá de parabéns.
                         </div>
-                        <div className="Enterprise-texto-Avaliacao">
+                        <div className="enterprise-texto-Avaliacao"  style={{marginTop: "-70px"}}>
                         4.0
                         </div>
                         <div className="Enterprise-Estrelas-Avaliacao">
@@ -34,16 +30,12 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        Otima Empresa
                         </div>
                             <div className="Enterprise-texto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                            quis nostrud
-                            exercitation ullamco laboris nisi ut.
+                                Tem varias politicas de inclusão, otima equipe.
                             </div>
-                            <div className="Enterprise-texto-Avaliacao">
+                            <div className="enterprise-texto-Avaliacao"  style={{marginTop: "-50px"}}>
                             4.0
                             </div>
                             <div className="Enterprise-Estrelas-Avaliacao">
@@ -56,17 +48,13 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        Satisfatorio
                         </div>
                         <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
+                        Não tive nenhum problema, politica muito inclusiva.
                         </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
+                        <div className="enterprise-texto-Avaliacao" style={{marginTop: "-50px"}}>
+                            4.0
                         </div>
                         <div className="Enterprise-Estrelas-Avaliacao">
                         <img src={Star} alt="stars" className="Enterprise-Stars-image"/>

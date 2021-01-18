@@ -12,17 +12,13 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        
                         </div>
                         <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
+                            Alguns colegas ainda vivem no seculo passado, passei por algunsmomentos complicados, apesar de ter recebido ajuda da diretoria achei isso meio chato.
                         </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
+                        <div className="Enterprise-texto-Avaliacao" style={{marginTop: "-50px"}}>
+                        3.0
                         </div>
                         <div className="Enterprise-Estrelas-Avaliacao">
                         <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
@@ -34,16 +30,11 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
                         </div>
                             <div className="Enterprise-texto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                            quis nostrud
-                            exercitation ullamco laboris nisi ut.
+                            Poderia ter politicas melhores de contratação.
                             </div>
-                            <div className="Enterprise-texto-Avaliacao">
+                            <div className="Enterprise-texto-Avaliacao" style={{marginTop: "-5px"}}>
                             4.0
                             </div>
                             <div className="Enterprise-Estrelas-Avaliacao">
@@ -52,27 +43,7 @@ export default function EnterpriseContent(){
                         </div>
                         </div>
 
-                        <div id="enterprise-results" className="enterprise-results">
                         
-                    <div id="enterprise-card-result" className="enterprise-card-result">
-                    <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
-                        </div>
-                        <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
-                        </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
-                        </div>
-                        <div className="Enterprise-Estrelas-Avaliacao">
-                        <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
-                        </div>
-                        </div>
-                        </div>
                 </div>
     )
 }

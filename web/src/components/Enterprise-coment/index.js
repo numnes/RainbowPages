@@ -1,12 +1,30 @@
-import React from 'react';
-import Rating from '@material-ui/lab/Rating';
 import './styles.css';
+import api from '../../services/api';
+import Rating from '@material-ui/lab/Rating';
+import React , { useState, useEffect } from 'react';
 
-export default function EnterpriseComent(){
+export default function EnterpriseComent(props){
 
-    function msg() {
-        alert("Você clicou no botão!")
-      };
+    const [cargo, setCargo] = useState("");
+    const [nota, setNota] = useState(0);
+    const [comentario, setComentario] = useState("");
+    const [pros, setPros] = useState("");
+    const [contras, setContras] = useState("");
+    const {empresa} = props;
+
+    function enviarCritica(){
+        let comentary = {
+            "cargo" : cargo,
+            "nota" : nota,
+            "comentario" : comentario,
+            "pros" : pros,
+            "contras" : contras,
+            "id_company": empresa
+        }
+        api.post('cometaryCreate', comentary).then(response => {
+            console.log(response.data);
+        });
+    }
       
     return(
         <div className="coment-content" id="coment-content">
@@ -27,28 +45,28 @@ export default function EnterpriseComent(){
                     <div className="text-nota" for="nota">
                         Cargo  
                     </div>
-                    <textarea id="cargo" className="cargo"></textarea>
+                    <textarea id="cargo" className="cargo" value = {cargo} onChange={e => setCargo(e.target.value)}></textarea>
                     <div className="text-nota01" for="nota">
                         Nota
                         <div className="star" for="nota">
-                            <Rating name="read-only" value={0} id="star" className="star"/>
+                            <Rating name="read-only" value={nota} id="star" className="star" onChange={e => setNota(e.target.value)}/>
                         </div>     
                     </div>
-                    <div className="text-nota" for="nota">
+                    <div className="text-nota" for="nota" value = {comentario} onChange={e => setComentario(e.target.value)}>
                         Comentário  
                     </div>
-                    <textarea id="coment"></textarea>
+                    <textarea id="coment" value = {comentario} onChange={e => setComentario(e.target.value)}></textarea>
                     <div className="text-nota" for="nota">
                         Prós  
                     </div>
-                    <textarea id="pros" className="contra"></textarea>
+                    <textarea id="pros" className="contra" value = {pros} onChange={e => setPros(e.target.value)}></textarea>
 
                     <div className="text-nota" for="nota">
                         Contras 
                     </div>
-                    <textarea id="contra" className="contra"></textarea>
+                    <textarea id="contra" className="contra" value={contras} onChange={e => setContras(e.target.value)}></textarea>
                         <div class="button">
-                            <input type="button" value="Enviar" onclick={()=>msg()}/>
+                            <input type="button" value="Enviar" onClick={()=>enviarCritica()}/>
                         </div>
                 </div>
                 

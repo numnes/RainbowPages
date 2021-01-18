@@ -51,7 +51,7 @@
         text-align: justify;
         color: #767779;
         max-width: 370px;
-        margin-left: -265px;
+        margin-left: -80px;
         margin-top: 64px;
         font-size: 35px;
 }
@@ -75,7 +75,7 @@
     width: 20%;
     height: 50px;
     color:  #e856a4;
-    background-color: #ffffff;
+    background-color: #f18dd3;
     border: 0.0px solid #ffffff;
     outline: none;
 }

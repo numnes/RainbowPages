@@ -11,14 +11,15 @@ module.exports = {
         return response.json(feedbacks);
     },
     async create(request, response) {
-        const { id_company, pros, contras, cargo, nota } = request.body;
+        const { id_company, pros, contras, cargo, nota, comentario} = request.body;
 
         const [id] = await connection('feedbacks').insert({
             id_company,
             pros,
             contras,
             cargo,
-            nota
+            nota,
+            comentario
         });
 
         return response.json({ id });

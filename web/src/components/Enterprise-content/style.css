@@ -1,5 +1,5 @@
 .enterprise-content{
-    background: #e856a4;
+    background: var(--color-theme);
     height: 90%;
     width:100%;
     padding: 2rem; 
@@ -52,16 +52,15 @@
         color: #97989b;
         max-width: 370px;
         margin-left: 190px;
-        margin-top: -35px;
+        margin-top: -10px;
         padding-top: 2.5rem;
         font-size: 13px;
     }
-.Enterprise-texto-Avaliacao{
+.enterprise-texto-Avaliacao{
         display:flex;
         text-align: justify;
         max-width: 370px;
         margin-left: 70px;
-        margin-top: -94px;
         font-size: 40px;
 }
 .Enterprise-Estrelas-Avaliacao{

@@ -1,6 +1,7 @@
 import React from 'react';
 import Star from '../../assets/images/estrelas.png';
 import './styles.css';
+import Rating from '@material-ui/lab/Rating';
 
 export default function EnterpriseContent(){
 
@@ -12,20 +13,17 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        
                         </div>
                         <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
+                        Equipe acolhedora, me sinto em casa.
                         </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
+                        <div className="Enterprise-texto-Avaliacao" style={{marginTop: "-5px"}}>
+                        5.0
                         </div>
                         <div className="Enterprise-Estrelas-Avaliacao">
-                        <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
+                        <Rating name="read-only" value={5}  className="Enterprise-Stars-image" readOnly />
+
                         </div>
                         </div>
                         </div>
@@ -34,20 +32,17 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                      
                         </div>
                             <div className="Enterprise-texto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                            quis nostrud
-                            exercitation ullamco laboris nisi ut.
+                            Fui tratada com muito respeito e educação.
                             </div>
-                            <div className="Enterprise-texto-Avaliacao">
-                            4.0
+                            <div className="Enterprise-texto-Avaliacao" style={{marginTop: "-5px"}}>
+                            3.0
                             </div>
-                            <div className="Enterprise-Estrelas-Avaliacao">
-                            <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
+                            <div className="Enterprise-Estrelas-Avaliacao">                        
+                            <Rating name="read-only" value={3}  className="Enterprise-Stars-image" readOnly />
+                            
                             </div>
                         </div>
                         </div>
@@ -56,20 +51,17 @@ export default function EnterpriseContent(){
                         
                     <div id="enterprise-card-result" className="enterprise-card-result">
                     <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
+                        
                         </div>
                         <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
+                        Não  tenho o que reclamar nos tres anos que trabalhei na equipe.
                         </div>
-                        <div className="Enterprise-texto-Avaliacao">
+                        <div className="Enterprise-texto-Avaliacao" style={{marginTop: "-20px"}}>
                         4.0
                         </div>
                         <div className="Enterprise-Estrelas-Avaliacao">
-                        <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
+                        <Rating name="read-only" value={4}  className="Enterprise-Stars-image" readOnly />
+                        
                         </div>
                         </div>
                         </div>

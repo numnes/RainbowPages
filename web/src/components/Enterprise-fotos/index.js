@@ -1,78 +1,36 @@
 import React from 'react';
 import Star from '../../assets/images/estrelas.png';
 import './styles.css';
+import Gallery from "react-photo-gallery";
 
 export default function EnterpriseContent(){
-
+    const photos = [
+        {
+          src: 'https://www.rsdesign.com.br/wp-content/uploads/2018/01/empresa-mobili%C3%A1rio.jpg',
+          width: 8,
+          height: 3
+        },
+        {
+          src: 'https://d33x644h9xoqir.cloudfront.net/wp-content/uploads/sites/2/2019/08/campaign-creators-gMsnXqILjp4-unsplash-1-745x400.jpg',
+          width: 1,
+          height: 1
+        }
+        ,
+        {
+          src: 'data:image/jpeg;base64,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',
+          width: 1,
+          height: 1
+        }
+        ,
+        {
+          src: 'https://www.worksolution.ws/wp-content/uploads/2013/12/AIREA-7-of-7-1500x1091.jpg',
+          width: 1,
+          height: 1
+        }
+      ];
     return(
         <div className="enterprise-content" id="enterprise-content">
-                <div id="enterprise-results02" className="enterprise-results02">
-                            </div>
-                    <div id="enterprise-results01" className="enterprise-results01">
-                        
-                    <div id="enterprise-card-result" className="enterprise-card-result">
-                    <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
-                        </div>
-                        <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
-                        </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
-                        </div>
-                        <div className="Enterprise-Estrelas-Avaliacao">
-                        <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
-                        </div>
-                        </div>
-                        </div>
-
-                        <div id="enterprise-results" className="enterprise-results">
-                        
-                    <div id="enterprise-card-result" className="enterprise-card-result">
-                    <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
-                        </div>
-                            <div className="Enterprise-texto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                            quis nostrud
-                            exercitation ullamco laboris nisi ut.
-                            </div>
-                            <div className="Enterprise-texto-Avaliacao">
-                            4.0
-                            </div>
-                            <div className="Enterprise-Estrelas-Avaliacao">
-                            <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div id="enterprise-results" className="enterprise-results">
-                        
-                    <div id="enterprise-card-result" className="enterprise-card-result">
-                    <div className="Enterprise-texto-Nome">
-                        Fulano Beltrano
-                        </div>
-                        <div className="Enterprise-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip commodo consequat commod.
-                         quis nostrud
-                         exercitation ullamco laboris nisi ut.
-                        </div>
-                        <div className="Enterprise-texto-Avaliacao">
-                        4.0
-                        </div>
-                        <div className="Enterprise-Estrelas-Avaliacao">
-                        <img src={Star} alt="stars" className="Enterprise-Stars-image"/>
-                        </div>
-                        </div>
-                        </div>
-                </div>
+            <Gallery photos={photos} />
+        </div>
     )
 }

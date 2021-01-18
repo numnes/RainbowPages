@@ -6,6 +6,13 @@ module.exports = {
         const companies = await connection('companies').select('*');
         return response.json(companies);
     },
+    async indexById(request, response) {
+        const {id} = request.body;
+        
+        const companie = await connection('companies').select('*').where({"id" : id}, true);
+
+        return response.json(companie);
+    },
     async indexFiltered(request, response) {
         const {filtro} = request.body;
         let responses = [];

@@ -16,9 +16,11 @@ import { Link , useHistory } from 'react-router-dom';
     let homeSearch = localStorage.getItem('homeSearch');
     const [search, setSearch] = useState([]);
     const [companies, setCompanies] = useState([]);
+    const [getFirst, setgetFirst] = useState(null);
+
     
+    // atualiza os resultados conforme as novas buscas
     let searchCompanies = (()=>{
-        // atualiza os resultados conforme as novas buscas
         api.post('companylistFiltered', {"filtro" : search}).then(response => {
             setCompanies(response.data[0].nome? response.data: response.data[0]);
         });
@@ -30,17 +32,19 @@ import { Link , useHistory } from 'react-router-dom';
     }
 
     useEffect(()=>{
+        console.log("==================")
         // carrega os resultados da busca feita na pagina inicial
-        if(companies.length == 0){
+        if(companies.length == 0 && getFirst == null){
             api.post('companylistFiltered', {"filtro" : homeSearch}).then(response => {
                 setCompanies(response.data[0].nome? response.data: response.data[0]);
-                homeSearch = search;
             });
+            setgetFirst(0);
         }
     });
     
     return(
         <div id="search" className="search">
+            {console.log(companies)}
             <div id="search-box">
                 <div className="serch-bar">
                     <div className="box-image-logo">
