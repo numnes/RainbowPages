@@ -19,6 +19,8 @@
     z-index: 2;
     overflow: hidden;
     background: var(--color-theme);
+    width: 100%;
+
 }
 
 /* sub itens */
@@ -63,10 +65,13 @@
     width: 350px;
     height: 100px;
     margin-top: 20px;
+    padding-bottom: 20px;
     
 }
 .comment-images{
     border-radius: 50%;
+    margin-bottom: 10px;
+    padding-bottom: 90px;
 }
 .button-search{
     width: 3rem;
@@ -96,9 +101,8 @@
     /* Itens principais */
     #home-page-content{
         max-width: 100%;
-      
         display: grid;
-        grid-template-rows: 500px 600px 150px;
+        grid-template-rows: 500px 610px 140px;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "banner"
@@ -116,8 +120,15 @@
     .home-footer{
         grid-area: footer;
         display: flex;
-        padding-top: 50px;
+        padding-top: 10px;
         justify-content: center;
+        background-color: #e856a4;
+    }
+    .footer{
+        width: 100%;
+        height: 15%;
+        padding-top: -10px;
+        background: #e856a4;
     }
 
     /* Sub itens */
@@ -172,7 +183,8 @@
     .texto-logo{
         display:flex;
         text-align: justify;
-        max-width: 300px;
+        max-width: 350px;
+        color:#ffffff;
         margin-left: 40px;
     }
     

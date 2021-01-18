@@ -2,6 +2,7 @@
 import React , { useState, useEffect } from 'react';
 import Banner from '../../assets/images/BANNER.png';
 import Logo from '../../assets/images/LOGO.ALPHA.final.png';
+import Foto1 from '../../assets/images/rainbow.png';
 import ImageGallery from 'react-image-gallery';
 import api from '../../services/api';
 import Footer from '../../components/Footer';
@@ -31,15 +32,15 @@ export default function Home(){
     
     const images = [
         {
-          original: 'https://picsum.photos/id/1018/1000/600/',
+          original: process.env.PUBLIC_URL + "tweet1.png",
           thumbnail: 'https://picsum.photos/id/1018/250/150/',
         },
         {
-          original: 'https://picsum.photos/id/1015/1000/600/',
+            original: process.env.PUBLIC_URL + "tweet2.png",
           thumbnail: 'https://picsum.photos/id/1015/250/150/',
         },
         {
-          original: 'https://picsum.photos/id/1019/1000/600/',
+            original: process.env.PUBLIC_URL + "tweet3.png",
           thumbnail: 'https://picsum.photos/id/1019/250/150/',
         },
       ];
@@ -73,10 +74,10 @@ export default function Home(){
                     </div>
                     <div className="home-pannel-about">
                         <div className="logo-box">
-                            <img src={Logo} alt="RainbowPages" className="image-logo"/>
+                            <img src={Foto1} alt="RainbowPages" className="image-logo"/>
                         </div>
                         <div className="texto-logo">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        A Rainbow Pages é uma plataforma de relacionamento entre empresas e jovens LGBT+, e nosso objetivo é proporcionar um espaço de voz para esse público. As empresas se beneficiam pela divulgação e reconhecimento do seu trabalho, enquanto a comunidade LGBT+ ganha uma maior inclusão.
                         </div>
                     </div>
                     <div className="home-pannel-comments ">
@@ -86,7 +87,8 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="home-footer ">
-                    <Footer/>
+                <div className="footer "> <Footer/></div>
+                   
                 </div>
             </div>
         </div>
