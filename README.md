@@ -7,6 +7,14 @@ As avaliações são anônimas, permitem que tanto elogios quanto situações de
 
 Já para as empresas, aquelas que são pró-LGBT+ e têm boas práticas no relacionamento com este público ganham com maior divulgação na comunidade, que favorece empresas que a apoiem. Empresas que queiram melhorar podem contratar os serviços de consultoria da Rainbow Pages para descobrir como e em quais pontos precisam mudar.
 
+## Video pitch
+
+https://www.youtube.com/watch?v=WLUsbGpDCMo&feature=youtu.be
+
+## Demonstração
+
+https://www.youtube.com/watch?v=rc32WDb0pMM
+
 Desenvolvido por:
 
 Gustavo Nomelini
