@@ -74,6 +74,8 @@ https://www.youtube.com/watch?v=rc32WDb0pMM
         </a>
         <br />
         <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=matheusnunesismael"
+          title="Ideas & Planning">🤔</a>
+        <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=matheusnunesismael"
           title="Code">💻</a>
         <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=matheusnunesismael"
           title="Documentation">📖</a>
