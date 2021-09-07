@@ -30,6 +30,8 @@ https://www.youtube.com/watch?v=rc32WDb0pMM
         <br />
         <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=gustavo-nomelini"
           title="Ideas & Planning">🤔</a>
+        <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=lukcaas"
+          title="gustavo-nomelini">🎨</a>
         <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=gustavo-nomelini"
           title="Business">💼</a>
         <a href="https://github.com/matheusnunesismael/RainbowPages/commits?author=gustavo-nomelini"
